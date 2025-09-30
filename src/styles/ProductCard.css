@@ -1,0 +1,77 @@
+/* src/styles/ProductCard.css */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+
+.product-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover; /* ou 'cover' se preferir preencher */
+  margin-bottom: 50px;
+  display: block;
+}
+
+
+.cart-btn {
+  margin-top: 10px;
+
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.cart-btn:hover {
+  background: #afafaf;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-btn {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-btn.cancel {
+  background: #ccc;
+}
+
+.modal-btn:not(.cancel) {
+  background: #6c63ff;
+  color: white;
+}

@@ -1,0 +1,130 @@
+/* Styles/Ajuda.css */
+.ajuda-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-alt);
+    color: var(--text);
+    padding: var(--spacing-xl);
+    text-align: center;
+    margin-top: 0; /* Garante que não há margem extra */
+}
+
+.ajuda-container {
+    max-width: 500px;
+    width: 100%;
+    padding: var(--spacing-xxl);
+    background: var(--background);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-lg);
+    animation: fadeIn 0.6s ease;
+}
+
+.construction-icon {
+    font-size: 4rem;
+    color: var(--accent);
+    margin-bottom: var(--spacing-lg);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+        opacity: 0.8; 
+    }
+    50% { 
+        transform: scale(1.1); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: scale(1); 
+        opacity: 0.8; 
+    }
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.construction-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing-md);
+    color: var(--text);
+}
+
+.construction-text {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.6;
+}
+
+.construction-links {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.construction-links .btn {
+    min-width: 140px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .ajuda-page {
+        padding: var(--spacing-md);
+        min-height: calc(100vh - 80px); /* Considera a altura da navbar */
+    }
+    
+    .ajuda-container {
+        padding: var(--spacing-xl);
+        margin: var(--spacing-md);
+    }
+    
+    .construction-title {
+        font-size: 1.5rem;
+    }
+    
+    .construction-icon {
+        font-size: 3rem;
+    }
+    
+    .construction-text {
+        font-size: 1rem;
+    }
+    
+    .construction-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .construction-links .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ajuda-container {
+        padding: var(--spacing-lg);
+    }
+    
+    .construction-title {
+        font-size: 1.3rem;
+    }
+    
+    .construction-icon {
+        font-size: 2.5rem;
+    }
+}
