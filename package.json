@@ -1,7 +1,7 @@
 {
   "name": "ecommerce-page",
   "version": "0.1.0",
-  "homepage": "https://github.com/Luizvnx/ecommerce-page",
+  "homepage": "https://luizvnx.github.io/ecommerce-page",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
