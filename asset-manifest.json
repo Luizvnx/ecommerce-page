@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Luizvnx/ecommerce-page/static/css/main.c5974f93.css",
+    "main.js": "/Luizvnx/ecommerce-page/static/js/main.2aa932bf.js",
+    "index.html": "/Luizvnx/ecommerce-page/index.html",
+    "main.c5974f93.css.map": "/Luizvnx/ecommerce-page/static/css/main.c5974f93.css.map",
+    "main.2aa932bf.js.map": "/Luizvnx/ecommerce-page/static/js/main.2aa932bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5974f93.css",
+    "static/js/main.2aa932bf.js"
+  ]
+}
